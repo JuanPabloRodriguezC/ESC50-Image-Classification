@@ -1,0 +1,27 @@
+name: esc50
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+ 
+  # PyTorch (MPS backend is built-in on Apple Silicon — no CUDA needed)
+  - pytorch>=2.2
+  - torchvision>=0.17
+ 
+  # Scientific stack
+  - numpy>=1.26,<2.0
+  - pandas>=2.2
+  - scipy>=1.13
+  - matplotlib>=3.8
+  - pillow>=10.3
+  - jupyterlab>=4.0
+ 
+  # Machine learning
+  - scikit-learn>=1.4
+ 
+  # Utilities
+  - tqdm>=4.66
+ 
